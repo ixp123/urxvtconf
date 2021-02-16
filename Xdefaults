@@ -1,109 +1,59 @@
-!!colorscheme
-!
-! special
- *.foreground:	#c5c8c6
- *.background:	[80]#202020
- *.cursorColor: #ff0000
+##### THIS FILE IS BEING CURRENTLY MANAGED BY URXVTCONFIG #####
+##### CHANGES DONE TO THIS FILE MANUALLY MAY AFFECT THE FUNCTIONALITY ######
+##### PROCEED WITH CAUTION! #####
 
- 
+! special colors
+*.foreground:  #c5c8c6
+*.background:  #0e0e0e
+*.cursorColor:  #c5c8c6
 ! black
- *color0:	#0d1a27
- *color8:	#86829c
-
+*.color0:      #282a2e
+*.color8:      #373b41
 ! red
- *color1:	#cc0000
- *color9:	#cc0000
-
+*.color1:      #a54242
+*.color9:      #cc6666
 ! green
- *.color2:	#09b851
- *.color10:	#09b851
-
+*.color2:      #8c9440
+*.color10:     #b5bd68
 ! yellow
- *.color3:	#eef20a
- *.color11:	#eef20a
-
+*.color3:      #de935f
+*.color11:     #f0c674
 ! blue
- *.color4:	#3752b8
- *.color12:	#3752b8
-
- 
-!magenta
- *.color5:	#b72c9f
- *.color13:	#b72c9f
-
+*.color4:      #5f819d
+*.color12:     #81a2be
+! magenta
+*.color5:      #85678f
+*.color13:     #b294bb
 ! cyan
- *.color6:	#2cb7a7
- *.color14:	#2cb7a7
-
+*.color6:      #5e8d87
+*.color14:     #8abeb7
 ! white
- *.color7:	#c5c8c6
- *.color15:	#ffffff
+*.color7:      #707880
+*.color15:     #c5c8c6
 
+URxvt*scrollBar:         false
+URxvt*scrollBar_right:   false
 
-!!URxvt Appearance
-!URxvt.font: xft:Inconsolata:size=8
-!URxvt.font: xft:Mono:pixelsize=14:antialias=true
-URxvt.font: xft:mono:pixelsize=14:antialias=true
-!URxvt.boldFont: xft:
-!URxvt.italicFont: xft:DejaVu Sans Mono:pixelsize:15, style=Book
-!URxvt.bolditalicFont: xft:DejaVu Sans Mono:pixelsize:15, style=Book
+URxvt.perl-ext-common: default,keyboard-select,clipboard,url-select
+URxvt.keyboard-select.clipboard: true
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+
+URxvt*transparent:       false
+
+URxvt*depth: 32
+URxvt.background: [100]#0e0e0e
+
+URxvt.font: xft:Monospace:pixelsize=16
 URxvt.letterSpace: 0
-URxvt.lineSpace: 0
-URxvt.geometry: 02x24
-!URxvt.internalBorder: 24
-URxvt.internalBorder: 4
-URxvt.cursorBlink: true
-URxvt.cursorUnderline: false
-URxvt.saveline: 2048
-URxvt.scrollBar: false
-URxvt.scrollBar_right: false
-URxvt.urgentonBell: true
-URxvt.depth: 24
+
+URxvt.keysym.Control-Shift-V: eval:paste_clipboard
+URxvt.keysym.Control-Shift-C: eval:selection_to_clipboard
 URxvt.iso14755: false
 URxvt.iso14755_52: false
 
-!! URxvt Functions
-URxvt.keysym.C-M-c:	builtin string:
-URxvt.keysym.C-M-v:	builtin string:
+URxvt.keysym.Control-Shift-K: resize-font:bigger
+URxvt.keysym.Control-Shift-J: resize-font:smaller
 
-URxvt.keysym.Shift-Control-v: perl:clipboard:paste
-URxvt.keysym.Shift-Control-c: perl:clipboard:copy
-urxvt.perl-ext-common: default.resize-font
-URxvt.keysym.C-j:resize-font:smaller
-URxvt.keysym.C-k:resize-font:bigger
-URxvt.keysym.C-equal: resize-font:reset
+*antialias:  true
+*autohint:   true
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
